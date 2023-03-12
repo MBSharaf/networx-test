@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NetWorx - Test Work</title>
+</head>
+<body>
+<!----------------------------------Start of header section -------------------------------------------------->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="text-box">
+            <h1>Bridging technology and creativity</h1>
+            <p>Strong Focus On Innovation And Creativity. <br>
+                It Conveys A Message That Our Company Combines Technological Expertise With Artistic Creativity</p>
+            <a href="contact.html" class="hero-btn">Contact Us</a>
+        </div>
+    </section>
+<!----------------------------------End of header section-------------------------------------------------->
+<!----------------------------------Start of course section -------------------------------------------------->
+
+            <section class="course">
+                <h1>Services We Offer</h1>
+                <p>NetWorx Is A Company That Offers Internet Services.</p>
+
+                <div class="row">
+                    <div class="course-col">
+                        <h3>Web Development</h3>
+                        <p>Web Development Plays a Crucial Role in Building a Strong Online Presence For Businesses And Organizations, 
+                            As Well As Creating Engaging Online Experiences For Users</p>
+                    </div>
+                    <div class="course-col">
+                        <h3>Motion Graphics</h3>
+                        <p>Motion Graphics Refers To The Use Of Animation And Digital Visual Effects To Create Engaging And Dynamic Multimedia Content, 
+                            Typically For Video Productions, Advertisements, Or User Interfaces</p>
+                    </div>
+                    <div class="course-col">
+                        <h3>Branding</h3>
+                        <p>Branding is the process of creating a unique name, symbol, design, or image that identifies and differentiates a product, 
+                            service, or organization from its competitors. It involves developing a strong brand identity</p>
+                    </div>
+                    
+                </div>
+
+             </section>
+<!----------------------------------End of course section -------------------------------------------------->
+
+<!----------------------------------Start of campus section -------------------------------------------------->
+            <section class="campus">
+                <h1>Our Team Members</h1>
+                <p>We Are Proudly NetWor Team Members As Programming And Other Network-Related Technologies.</p>
+
+                <div class="row">
+                    <div class="campus-col">
+                        <img src="image/cert1.jpg">
+                        <div class="layer">
+                            <h3>Mohamed</h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="image/main-cert.jpg">
+                        <div class="layer">
+                            <h3>Menna</h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="image/cert2.jpg">
+                        <div class="layer">
+                            <h3>Mostafa </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!----------------------------------End of campus section -------------------------------------------------->
+<!----------------------------------Start of slider  section -------------------------------------------------->
+            <div class="gallery-wrap">
+                <img src="image/back.png" id="backBtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="image/image-1.png"></span>
+                        <span><img src="image/image-2.png"></span>
+                        <span><img src="image/image-3.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="image/image-4.png"></span>
+                        <span><img src="image/image-5.png"></span>
+                        <span><img src="image/image-6.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="image/image-1.png"></span>
+                        <span><img src="image/image-2.png"></span>
+                        <span><img src="image/image-3.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="image/image-4.png"></span>
+                        <span><img src="image/image-5.png"></span>
+                        <span><img src="image/image-6.png"></span>
+                    </div>
+                </div>
+                <img src="image/next.png" id="nextBtn">
+            </div>
+<!----------------------------------End of slider section -------------------------------------------------->
+<!----------------------------------Start of call to action section -------------------------------------------------->
+            <section class="cta">
+                    <h1>We Are Proudly NetWor Team Members As Programming<br> Other Network-Related Technologies</h1>
+                    <a href="contact.html" class="hero-btn">Contact Us</a>
+            </section>
+<!----------------------------------End of call to action section -------------------------------------------------->
+<!----------------------------------Start of footer section -------------------------------------------------->
+            <section class="footer">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus provident aspernatur, 
+                voluptas amet ullam maiores. Possimus <br>amet ipsa dolores ex nihil recusandae quasi sint quidem?</p>
+                    <div class="icnos">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <p>Made with <i class="fa-solid fa-heart"></i> BY Mohamed Sharaf</p>
+            </section>
+<!----------------------------------End of footer section -------------------------------------------------->
+
+<!----------------------------------slider Action-------------------------------------------------->
+            <script>
+                let scrollContanier = document.querySelector(".gallery");
+                let backBtn = document.getElementById("backBtn");
+                let nextBtn = document.getElementById("nextBtn");
+
+                scrollContanier.addEventListener("wheel", (evt) => {
+                    evt.preventDefault();
+                    scrollContanier.scrollLeft += evt.deltaY;
+                    scrollContanier.style.scrollBehavior = "auto";
+                });
+
+                nextBtn.addEventListener("click", ()=> {
+                    scrollContanier.style.scrollBehavior = "smooth";
+                    scrollContanier.scrollLeft += 900;
+                });
+
+                backBtn.addEventListener("click", ()=> {
+                    scrollContanier.style.scrollBehavior = "smooth";
+                    scrollContanier.scrollLeft -= 900;
+                });
+
+
+            </script>
+<!----------------------------------slider Action-------------------------------------------------->
+
+<!----------------------------------Toggle Action-------------------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
